@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MacRemote — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 6rem;
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: #1b1f24; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #16181c; } }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin-top: 2.5rem; }
+  a { color: #1256e8; }
+  @media (prefers-color-scheme: dark) { a { color: #6db3f8; } }
+  ol, ul { padding-left: 1.2rem; }
+  li { margin: 0.4rem 0; }
+  .lead { font-size: 1.1rem; color: #4b5563; }
+  @media (prefers-color-scheme: dark) { .lead { color: #9ca3af; } }
+</style>
+</head>
+<body>
+
+<h1>MacRemote Support</h1>
+<p class="lead">Your iPhone as a trackpad and keyboard for your Mac.</p>
+
+<h2>Setting up</h2>
+<ol>
+  <li>On the Mac, download MacRemote from
+    <a href="https://github.com/anonim2214/mac-remote-releases/releases/latest">the releases page</a>
+    and drag it into Applications.</li>
+  <li>Open it. It appears in the menu bar — there is no window and no Dock
+    icon.</li>
+  <li>Click the menu bar icon and grant Accessibility when asked. macOS
+    requires this before any app may move the pointer or type; the panel
+    has a button that opens the right settings page.</li>
+  <li>On the iPhone, open MacRemote, tap your Mac, and enter the six-digit
+    code the Mac shows.</li>
+</ol>
+
+<h2>The iPhone does not see my Mac</h2>
+<ul>
+  <li>Both devices have to be on the same Wi-Fi network. A phone on mobile
+    data, or on a guest network, will not find anything.</li>
+  <li>The Mac app has to be running — look for its icon in the menu bar.</li>
+  <li>The first time, iOS asks for permission to find devices on the local
+    network. If you declined, turn it back on in Settings → MacRemote →
+    Local Network.</li>
+  <li>Some routers block devices from seeing each other. If yours has a
+    setting called client isolation, AP isolation or guest mode, turn it
+    off for your network.</li>
+</ul>
+
+<h2>The pointer does not move</h2>
+<p>The Accessibility permission is missing or was reset. Open System
+Settings → Privacy &amp; Security → Accessibility and make sure MacRemote
+is on. If it is already on, switch it off and on again — macOS ties the
+permission to the exact copy of the app, and it can go stale after an
+update.</p>
+
+<h2>It says the Mac no longer recognises this iPhone</h2>
+<p>The pairing was removed on the Mac. Open the menu bar panel, allow new
+devices, and pair again with a fresh code.</p>
+
+<h2>The Mac refuses to pair</h2>
+<p>By design, the Mac stops accepting new devices once the first one has
+paired. Open the menu bar panel and turn accepting new devices back on.</p>
+
+<h2>Requirements</h2>
+<ul>
+  <li>iPhone with iOS 18 or later</li>
+  <li>Mac with macOS 14 or later</li>
+  <li>Both on the same Wi-Fi network</li>
+</ul>
+
+<h2>Contact</h2>
+<p><a href="mailto:anonim2214@gmail.com">anonim2214@gmail.com</a> — please say
+which iPhone and which macOS version you are on.</p>
+
+<p><a href="privacy.html">Privacy Policy</a></p>
+
+</body>
+</html>
